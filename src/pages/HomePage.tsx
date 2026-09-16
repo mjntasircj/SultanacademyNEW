@@ -194,11 +194,6 @@ export const HomePage: React.FC = () => {
                       }
                     }}
                   />
-                  <div className="pointer-events-none absolute inset-x-0 bottom-0 p-4 z-20 flex items-end">
-                    <div className="text-xs text-slate-200 backdrop-blur-md bg-slate-950/85 rounded-lg px-3 py-1.5 border border-slate-700/90 shadow-xl">
-                      <span className="font-semibold text-white">Structured Mentorship</span> · Concept breakdown in real-time
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
