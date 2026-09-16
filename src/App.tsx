@@ -17,31 +17,33 @@ const AppContent: React.FC = () => {
   const { currentPath } = useRouter();
 
   const renderPage = () => {
-    if (currentPath === '/' || currentPath === '') {
+    const clean = currentPath.replace(/\/+$/, '') || '/';
+
+    if (clean === '/' || clean === '') {
       return <HomePage />;
     }
-    if (currentPath === '/about') {
+    if (clean === '/about' || clean.endsWith('/about')) {
       return <AboutPage />;
     }
-    if (currentPath === '/courses') {
+    if (clean === '/courses' || clean.endsWith('/courses')) {
       return <CoursesPage />;
     }
-    if (currentPath === '/teachers') {
+    if (clean === '/teachers' || clean.endsWith('/teachers')) {
       return <TeachersPage />;
     }
-    if (currentPath === '/campus') {
+    if (clean === '/campus' || clean.endsWith('/campus')) {
       return <CampusPage />;
     }
-    if (currentPath === '/events') {
+    if (clean === '/events' || clean.endsWith('/events')) {
       return <EventsPage />;
     }
-    if (currentPath.startsWith('/events/')) {
+    if (clean.includes('/events/')) {
       return <EventDetailPage />;
     }
-    if (currentPath === '/payment') {
+    if (clean === '/payment' || clean.endsWith('/payment')) {
       return <PaymentPage />;
     }
-    if (currentPath === '/contact') {
+    if (clean === '/contact' || clean.endsWith('/contact')) {
       return <ContactPage />;
     }
 

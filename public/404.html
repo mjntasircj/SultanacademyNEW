@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sultan Academy — Redirecting...</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages and Static Hosts
+      // Redirects 404 paths back to the SPA index with a route query param
+      (function() {
+        var pathSegmentsToKeep = 0;
+        var l = window.location;
+        
+        // If hosted on user.github.io/repo-name/
+        // Detect if the first path segment is a repo or a route
+        var knownRoutes = ['about', 'courses', 'teachers', 'campus', 'events', 'contact', 'payment'];
+        var segments = l.pathname.split('/').filter(Boolean);
+        
+        if (segments.length > 1 && !knownRoutes.includes(segments[0])) {
+          pathSegmentsToKeep = 1; // GitHub Pages project repo
+        }
+
+        var base = l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/');
+        if (!base.endsWith('/')) base += '/';
+
+        var routePath = l.pathname.split('/').slice(1 + pathSegmentsToKeep).join('/');
+        var targetUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          base + '?p=/' + routePath.replace(/&/g, '~and~') +
+          (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash;
+
+        l.replace(targetUrl);
+      })();
+    </script>
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: #020617;
+        color: #f8fafc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+        padding: 20px;
+      }
+      .card {
+        max-width: 480px;
+        background: #0f172a;
+        border: 1px solid #1e293b;
+        border-radius: 20px;
+        padding: 32px;
+      }
+      h1 { font-size: 20px; margin-bottom: 8px; color: #fff; }
+      p { font-size: 14px; color: #94a3b8; line-height: 1.6; }
+      a {
+        display: inline-block;
+        margin-top: 16px;
+        padding: 12px 24px;
+        background: #e11d48;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Redirecting to Sultan Academy...</h1>
+      <p>Taking you to the requested page. If you are not redirected automatically, click below:</p>
+      <a href="/">Go to Sultan Academy</a>
+    </div>
+  </body>
+</html>
