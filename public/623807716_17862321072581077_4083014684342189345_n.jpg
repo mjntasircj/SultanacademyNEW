@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="curtainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="40%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="30%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="silverGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#e2e8f0" />
+      <stop offset="70%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    <radialGradient id="tableGlow" cx="50%" cy="85%" r="60%">
+      <stop offset="0%" stop-color="#be123c" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#020617" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#curtainGrad)" />
+  <rect width="1200" height="675" fill="url(#tableGlow)" />
+
+  <!-- Curtain folds styling in background -->
+  <g opacity="0.08" fill="#cbd5e1">
+    <path d="M100,0 C120,200 80,400 100,675 L160,675 C140,400 180,200 160,0 Z" />
+    <path d="M260,0 C280,200 240,400 260,675 L320,675 C300,400 340,200 320,0 Z" />
+    <path d="M880,0 C900,200 860,400 880,675 L940,675 C920,400 960,200 940,0 Z" />
+    <path d="M1040,0 C1060,200 1020,400 1040,675 L1100,675 C1080,400 1120,200 1100,0 Z" />
+  </g>
+
+  <!-- Table surface -->
+  <rect x="0" y="550" width="1200" height="125" fill="#0b0f19" stroke="#be123c" stroke-width="2" />
+  <rect x="0" y="550" width="1200" height="10" fill="#be123c" opacity="0.6" />
+
+  <!-- Header Section -->
+  <g transform="translate(600, 60)">
+    <rect x="-180" y="-20" width="360" height="40" rx="20" fill="#0f172a" stroke="#f59e0b" stroke-width="2" />
+    <text x="0" y="6" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#fef08a" text-anchor="middle" letter-spacing="3">SULTAN ACADEMY • OFFICIAL AWARDS</text>
+  </g>
+
+  <text x="600" y="140" font-family="system-ui, sans-serif" font-size="46" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">SA CUP 2026 OFFICIAL TROPHIES</text>
+  <text x="600" y="180" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#cbd5e1" text-anchor="middle">Tournament Winner &amp; Runner-Up Silverware Presentation</text>
+
+  <!-- ================= TROPHY 1: RUNNER-UP (LEFT) ================= -->
+  <g transform="translate(380, 360)">
+    <!-- Table shadow -->
+    <ellipse cx="0" cy="190" rx="90" ry="14" fill="#000000" opacity="0.6" />
+
+    <!-- Base box with SA CUP RUNNER-UP Logo -->
+    <rect x="-70" y="90" width="140" height="100" rx="6" fill="#1e293b" stroke="#64748b" stroke-width="3" />
+    <rect x="-60" y="100" width="120" height="80" rx="4" fill="#ffffff" />
+    
+    <!-- Runner-up Shield Logo inside white base -->
+    <circle cx="0" cy="128" r="16" fill="#f1f5f9" stroke="#15803d" stroke-width="2" />
+    <text x="0" y="132" font-family="system-ui, sans-serif" font-size="10" font-weight="900" fill="#0f172a" text-anchor="middle">⚽</text>
+    <text x="0" y="112" font-family="system-ui, sans-serif" font-size="8" font-weight="bold" fill="#0f172a" text-anchor="middle">SA CUP 2026</text>
+    <rect x="-50" y="152" width="100" height="18" rx="4" fill="#dc2626" />
+    <text x="0" y="165" font-family="system-ui, sans-serif" font-size="9" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">RUNNER-UP</text>
+    <text x="0" y="176" font-family="system-ui, sans-serif" font-size="6" font-weight="bold" fill="#0f172a" text-anchor="middle">SULTAN ACADEMY</text>
+
+    <!-- Trophy Stem & Risers -->
+    <path d="M-30,90 L-18,30 L18,30 L30,90 Z" fill="url(#silverGrad2)" />
+    <circle cx="0" cy="25" r="15" fill="url(#silverGrad2)" />
+
+    <!-- Trophy Bowl -->
+    <path d="M-55,-60 C-55,20 -28,25 0,25 C28,25 55,20 55,-60 Z" fill="url(#silverGrad2)" />
+    <ellipse cx="0" cy="-60" rx="55" ry="12" fill="#ffffff" />
+    <path d="M-45,-60 C-45,-90 0,-100 0,-100 C0,-100 45,-90 45,-60 Z" fill="url(#silverGrad2)" />
+
+    <!-- Soccer Player Finial -->
+    <circle cx="0" cy="-125" r="7" fill="url(#goldGrad2)" />
+    <path d="M-3,-118 L3,-118 L5,-100 L-5,-100 Z" fill="url(#goldGrad2)" />
+    <circle cx="10" cy="-108" r="3.5" fill="#fef08a" />
+
+    <!-- Handles -->
+    <path d="M-52,-45 C-90,-40 -85,-5 -45,0" fill="none" stroke="url(#silverGrad2)" stroke-width="10" stroke-linecap="round" />
+    <path d="M52,-45 C90,-40 85,-5 45,0" fill="none" stroke="url(#silverGrad2)" stroke-width="10" stroke-linecap="round" />
+
+    <!-- Ribbons -->
+    <path d="M-45,-20 Q-70,50 -55,140" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round" />
+    <path d="M-38,-20 Q-55,50 -40,135" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
+    <path d="M40,-20 Q55,50 40,135" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
+    <path d="M45,-20 Q70,50 55,140" fill="none" stroke="#dc2626" stroke-width="6" stroke-linecap="round" />
+  </g>
+
+  <!-- ================= TROPHY 2: WINNER (RIGHT - LARGER) ================= -->
+  <g transform="translate(800, 330)">
+    <!-- Table shadow -->
+    <ellipse cx="0" cy="220" rx="110" ry="16" fill="#000000" opacity="0.6" />
+
+    <!-- Base box with SA CUP WINNER Logo -->
+    <rect x="-85" y="110" width="170" height="115" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="3.5" />
+    <rect x="-72" y="122" width="144" height="92" rx="6" fill="#ffffff" />
+    
+    <!-- Winner Shield Logo inside white base -->
+    <circle cx="0" cy="155" r="20" fill="#fef08a" stroke="#15803d" stroke-width="2.5" />
+    <text x="0" y="160" font-family="system-ui, sans-serif" font-size="13" font-weight="900" fill="#0f172a" text-anchor="middle">⚽</text>
+    <text x="0" y="136" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">SA CUP 2026</text>
+    <rect x="-62" y="184" width="124" height="22" rx="5" fill="#f59e0b" />
+    <text x="0" y="199" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">WINNER</text>
+    <text x="0" y="210" font-family="system-ui, sans-serif" font-size="7" font-weight="bold" fill="#0f172a" text-anchor="middle">SULTAN ACADEMY</text>
+
+    <!-- Trophy Stem & Risers (Larger) -->
+    <path d="M-38,110 L-22,35 L22,35 L38,110 Z" fill="url(#goldGrad2)" />
+    <circle cx="0" cy="30" r="18" fill="url(#goldGrad2)" />
+
+    <!-- Trophy Bowl (Grand) -->
+    <path d="M-72,-75 C-72,25 -35,30 0,30 C35,30 72,25 72,-75 Z" fill="url(#goldGrad2)" />
+    <ellipse cx="0" cy="-75" rx="72" ry="15" fill="#fef08a" />
+    <path d="M-60,-75 C-60,-115 0,-125 0,-125 C0,-125 60,-115 60,-75 Z" fill="url(#goldGrad2)" />
+
+    <!-- Soccer Player Finial -->
+    <circle cx="0" cy="-155" r="9" fill="#fef08a" />
+    <path d="M-5,-146 L5,-146 L7,-125 L-7,-125 Z" fill="#fef08a" />
+    <circle cx="14" cy="-134" r="4.5" fill="#ffffff" />
+
+    <!-- Grand Handles with Ornate Curves -->
+    <path d="M-68,-55 C-125,-50 -120,-10 -60,0" fill="none" stroke="url(#goldGrad2)" stroke-width="14" stroke-linecap="round" />
+    <path d="M68,-55 C125,-50 120,-10 60,0" fill="none" stroke="url(#goldGrad2)" stroke-width="14" stroke-linecap="round" />
+
+    <!-- Ribbons (Red, White, Blue) -->
+    <path d="M-55,-25 Q-95,65 -75,170" fill="none" stroke="#dc2626" stroke-width="8" stroke-linecap="round" />
+    <path d="M-45,-25 Q-75,65 -55,165" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" />
+    <path d="M45,-25 Q75,65 55,165" fill="none" stroke="#2563eb" stroke-width="7" stroke-linecap="round" />
+    <path d="M55,-25 Q95,65 75,170" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" />
+  </g>
+
+  <!-- Bottom Labels -->
+  <g transform="translate(600, 625)">
+    <rect x="-300" y="-18" width="600" height="36" rx="18" fill="#090d16" stroke="#334155" stroke-width="1.5" />
+    <text x="0" y="5" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#cbd5e1" text-anchor="middle">
+      Trophies with official Sultan Academy Crest • Crafted for Champions
+    </text>
+  </g>
+</svg>

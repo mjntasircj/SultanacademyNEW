@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="40%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#052e16" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="30%" stop-color="#eab308" />
+      <stop offset="70%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#a16207" />
+    </linearGradient>
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+    <radialGradient id="stadiumLight" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#1e293b" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#020617" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="turfGlow" cx="50%" cy="95%" r="50%">
+      <stop offset="0%" stop-color="#15803d" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#052e16" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)" />
+  <rect width="1200" height="675" fill="url(#stadiumLight)" />
+  <rect width="1200" height="675" fill="url(#turfGlow)" />
+
+  <!-- Stadium Floodlights Glow -->
+  <circle cx="150" cy="80" r="140" fill="#38bdf8" opacity="0.08" filter="blur(20px)" />
+  <circle cx="1050" cy="80" r="140" fill="#38bdf8" opacity="0.08" filter="blur(20px)" />
+
+  <!-- Chainlink Fence Pattern Overlay (Representing the turf enclosure) -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1.5">
+    <path d="M0,0 L1200,675 M0,100 L1200,775 M0,200 L1200,875 M0,-100 L1200,575 M0,-200 L1200,475" />
+    <path d="M1200,0 L0,675 M1200,100 L0,775 M1200,200 L0,875 M1200,-100 L0,575 M1200,-200 L0,475" />
+  </g>
+
+  <!-- Pitch turf grass line -->
+  <path d="M0,580 L1200,580" stroke="#22c55e" stroke-width="6" opacity="0.4" />
+  <path d="M0,583 L1200,583" stroke="#ffffff" stroke-width="2" opacity="0.3" stroke-dasharray="16 12" />
+
+  <!-- Center Decorative Glow -->
+  <circle cx="600" cy="310" r="220" fill="#eab308" opacity="0.12" />
+
+  <!-- Large Center Trophy Drawing -->
+  <g transform="translate(600, 310)">
+    <!-- Base -->
+    <rect x="-70" y="110" width="140" height="26" rx="4" fill="#1e293b" stroke="#ca8a04" stroke-width="2" />
+    <rect x="-90" y="136" width="180" height="32" rx="6" fill="#0f172a" stroke="#ca8a04" stroke-width="3" />
+    <text x="0" y="158" font-family="system-ui, sans-serif" font-size="14" font-weight="900" fill="#fef08a" text-anchor="middle" letter-spacing="2">SA CUP 2026 CHAMPIONS</text>
+    
+    <!-- Pedestal Stem -->
+    <path d="M-28,110 L-18,60 L18,60 L28,110 Z" fill="url(#goldGrad)" />
+    <circle cx="0" cy="55" r="14" fill="url(#goldGrad)" />
+    
+    <!-- Trophy Cup Body -->
+    <path d="M-65,-40 C-65,40 -35,50 0,50 C35,50 65,40 65,-40 Z" fill="url(#goldGrad)" />
+    <!-- Cup Rim & Lid -->
+    <ellipse cx="0" cy="-40" rx="65" ry="14" fill="#fef08a" />
+    <path d="M-50,-40 C-50,-75 0,-85 0,-85 C0,-85 50,-75 50,-40 Z" fill="url(#goldGrad)" />
+    <!-- Trophy Finial: Soccer Player -->
+    <circle cx="0" cy="-105" r="8" fill="#fef08a" />
+    <path d="M-4,-97 L4,-97 L6,-80 L-6,-80 Z" fill="#fef08a" />
+    <circle cx="12" cy="-90" r="4" fill="#ffffff" />
+    
+    <!-- Trophy Handles -->
+    <path d="M-62,-25 C-110,-20 -105,25 -55,30" fill="none" stroke="url(#goldGrad)" stroke-width="12" stroke-linecap="round" />
+    <path d="M62,-25 C110,-20 105,25 55,30" fill="none" stroke="url(#goldGrad)" stroke-width="12" stroke-linecap="round" />
+    
+    <!-- Ribbons (Red, White, Blue, Green) -->
+    <path d="M-50,0 Q-80,60 -65,140" fill="none" stroke="#ef4444" stroke-width="8" stroke-linecap="round" />
+    <path d="M-40,0 Q-65,60 -45,135" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" />
+    <path d="M40,0 Q65,60 45,135" fill="none" stroke="#3b82f6" stroke-width="7" stroke-linecap="round" />
+    <path d="M50,0 Q80,60 65,140" fill="none" stroke="#22c55e" stroke-width="8" stroke-linecap="round" />
+  </g>
+
+  <!-- Left Element: Golden Boot Trophy -->
+  <g transform="translate(260, 410)">
+    <rect x="-50" y="35" width="100" height="20" rx="4" fill="#0f172a" stroke="#ca8a04" stroke-width="2" />
+    <text x="0" y="50" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#fef08a" text-anchor="middle">TOP SCORER AWARD</text>
+    <!-- Golden Football Boot Graphic -->
+    <path d="M-45,30 L5,30 C20,30 35,26 45,18 C40,6 20,4 5,8 L-15,-10 L-35,-10 L-38,10 L-45,30 Z" fill="url(#goldGrad)" />
+    <circle cx="35" cy="5" r="5" fill="#ffffff" opacity="0.8" />
+  </g>
+
+  <!-- Right Element: Medals & Award -->
+  <g transform="translate(940, 410)">
+    <rect x="-50" y="35" width="100" height="20" rx="4" fill="#0f172a" stroke="#ca8a04" stroke-width="2" />
+    <text x="0" y="50" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#fef08a" text-anchor="middle">OFFICIAL MEDALS</text>
+    <!-- Medal Ribbon -->
+    <path d="M-20,-15 L0,15 L20,-15" fill="none" stroke="#ef4444" stroke-width="6" stroke-linecap="round" />
+    <path d="M-12,-15 L0,15 L12,-15" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    <!-- Medal Disc -->
+    <circle cx="0" cy="18" r="16" fill="url(#goldGrad)" stroke="#fef08a" stroke-width="2" />
+    <circle cx="0" cy="18" r="11" fill="none" stroke="#ca8a04" stroke-width="1.5" />
+    <text x="0" y="22" font-family="system-ui, sans-serif" font-size="10" font-weight="900" fill="#713f12" text-anchor="middle">★</text>
+  </g>
+
+  <!-- Top Badges -->
+  <g transform="translate(600, 65)">
+    <rect x="-190" y="-22" width="380" height="44" rx="22" fill="#0f172a" stroke="#ca8a04" stroke-width="2" />
+    <text x="0" y="6" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#fef08a" text-anchor="middle" letter-spacing="3">SULTAN ACADEMY • ANNUAL CHAMPIONSHIP</text>
+  </g>
+
+  <!-- Main Headline -->
+  <text x="600" y="150" font-family="system-ui, sans-serif" font-size="52" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">SA CUP — SEASON 3</text>
+  <text x="600" y="195" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="#94a3b8" text-anchor="middle" letter-spacing="1">Champions & Tournament Matchday Squad</text>
+
+  <!-- Bottom Floating Badges (Teams & Highlights) -->
+  <g transform="translate(600, 615)">
+    <rect x="-260" y="-18" width="520" height="36" rx="18" fill="#090d16" stroke="#334155" stroke-width="1.5" />
+    <text x="0" y="5" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#cbd5e1" text-anchor="middle">
+      7-A-Side Pitch • FC MicroBots & Student Teams • Dhaka Turf
+    </text>
+  </g>
+</svg>

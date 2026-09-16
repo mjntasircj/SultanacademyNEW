@@ -1,0 +1,6 @@
+{
+  "name": "Sultan Academy",
+  "description": "Official website for Sultan Academy — premier O and A Level Cambridge & Edexcel coaching centre at Taltola Member Line Road, Dhaka led by Sultan Mahmud Shuvo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
